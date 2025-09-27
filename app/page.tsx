@@ -4,6 +4,7 @@ import experiences from "@/experiences";
 import projects from "@/projects";
 import Image from "next/image";
 import Link from "next/link";
+import { Github, Linkedin, Twitter } from "lucide-react";
 
 export default function Home() {
   return (
@@ -18,14 +19,25 @@ export default function Home() {
             className="rounded-lg"
           />
         </Link>
-        <div>
+        <div className="flex flex-col items-start">
           <p className="text-xl font-[500] text-[#1A1A1A] tracking-tight">
             Nikhil
           </p>
-          <p className="text-sm text-gray-500">
-            Software Engineer | 20 something year old
-          </p>
+          <div className="flex items-center gap-2 text-sm text-gray-500">
+            <span>Software Engineer | 20 something year old |  </span>
+            <Link href="https://github.com/BeNikk" target="_blank" rel="noopener noreferrer">
+              <Github className="w-4 h-4 hover:text-black" />
+            </Link>
+            <Link href="https://www.linkedin.com/in/nikhil-bhatt-3b37a0255/" target="_blank" rel="noopener noreferrer">
+              <Linkedin className="w-4 h-4 hover:text-black" />
+            </Link>
+            <Link href="https://x.com/Be_Nikkk" target="_blank" rel="noopener noreferrer">
+              <Twitter className="w-4 h-4 hover:text-black" />
+            </Link>
+          </div>
+
         </div>
+
       </div>
 
       <div className="mt-2 h-px bg-gray-100" />
@@ -38,14 +50,7 @@ export default function Home() {
           Outside of work, I run, sometimes cricket, hit the gym, speak here and there, and talk to people who have stories to tell.
         </p>
       </div>
-      <div className="mt-4">
-        <Link
-          href="/about"
-          className="text-sm font-medium text-gray-600 hover:text-black"
-        >
-          More about me →
-        </Link>
-      </div>
+
       <div className="mt-6 h-px bg-gray-100" />
 
       <div className="mt-6">
@@ -179,6 +184,11 @@ export default function Home() {
           ))}
         </div>
       </div>
+      <div className="mt-12 border-t border-gray-200 pt-6 text-center text-gray-500 text-xs">
+        © {new Date().getFullYear()} Nikhil Bhatt
+      </div>
+      <br />
+      <br />
     </div>
   );
 }
