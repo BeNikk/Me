@@ -1,5 +1,6 @@
 import educations from "@/education";
 import experiences from "@/experiences";
+import projects from "@/projects";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -114,7 +115,36 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <br />
+      <div className="mt-6">
+        <h2 className="text-base font-[500] text-[#1A1A1A] mb-4">Stuff I've built</h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {projects.map((proj, index) => (
+            <div
+              key={index}
+              className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition"
+            >
+              <Image
+                src={proj.image}
+                alt={proj.name}
+                width={400}
+                height={200}
+                className="rounded-md mb-3 object-cover"
+              />
+              <p className="text-sm font-medium text-[#1A1A1A]">{proj.name}</p>
+              <p className="text-xs text-gray-500 mb-2">{proj.description}</p>
+              <p className="text-xs text-gray-400 mb-2">{proj.tech}</p>
+              <Link
+                href={proj.link}
+                className="text-xs text-gray-600 hover:text-black"
+              >
+                View Project →
+              </Link>
+            </div>
+          ))}
+        </div>
+      </div>
+
     </div>
   );
 }
