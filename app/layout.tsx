@@ -8,6 +8,10 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Nikhil",
   description: "About Me",
+  icons: {
+    icon: '/ProfileImage.jpg',
+    apple: '/ProfileImage.jpg', // For Apple devices
+  },
 };
 
 export default function RootLayout({
@@ -17,6 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" type="image/jpg" sizes="32x32" href="/ProfileImage.jpg" />
+      </head>
       <body className={inter.className}>
         {children}
       </body>
