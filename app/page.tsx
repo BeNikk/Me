@@ -24,21 +24,22 @@ export default function Home() {
             <p className="text-xl font-[500] text-[#1A1A1A] tracking-tight">
               Nikhil
             </p>
-            <div className="flex items-center gap-4 text-sm text-gray-500">
-              <span>Software Engineer</span>
-              <Link href="https://github.com/BeNikk" target="_blank" rel="noopener noreferrer">
-                <Github className="w-4 h-4 hover:text-black" />
-              </Link>
-              <Link href="https://www.linkedin.com/in/nikhil-bhatt-3b37a0255/" target="_blank" rel="noopener noreferrer">
-                <Linkedin className="w-4 h-4 hover:text-black" />
-              </Link>
-              <Link href="https://x.com/Be_Nikkk" target="_blank" rel="noopener noreferrer">
-                <Twitter className="w-4 h-4 hover:text-black" />
-              </Link>
+            <div className="flex items-center w-full justify-around sm:gap-4 gap-3 text-sm text-gray-500">
+              <span>Software Engineer, 20 something year old</span>
+              <div className="flex items-center gap-2 ml-6">
+                <Link href="https://github.com/BeNikk" target="_blank" rel="noopener noreferrer">
+                  <Github className="w-4 h-4 hover:text-black" />
+                </Link>
+                <Link href="https://www.linkedin.com/in/nikhil-bhatt-3b37a0255/" target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="w-4 h-4 hover:text-black" />
+                </Link>
+                <Link href="https://x.com/Be_Nikkk" target="_blank" rel="noopener noreferrer">
+                  <Twitter className="w-4 h-4 hover:text-black" />
+                </Link>
+              </div>
+
             </div>
-            <div className="text-sm text-gray-500">
-              20 something year old
-            </div>
+
 
           </div>
 
