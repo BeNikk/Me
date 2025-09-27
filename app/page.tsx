@@ -12,7 +12,7 @@ export default function Home() {
       <div className="flex items-center gap-4">
         <Link href={"/"}>
           <Image
-            src="/profileImage.jpg"
+            src="/ProfileImage.jpg"
             alt="profile image"
             width={64}
             height={64}
