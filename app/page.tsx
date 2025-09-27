@@ -1,3 +1,4 @@
+import educations from "@/education";
 import experiences from "@/experiences";
 import Image from "next/image";
 import Link from "next/link";
@@ -28,7 +29,7 @@ export default function Home() {
       <div className="mt-2 h-px bg-gray-100" />
       <div className="mt-4 space-y-2">
         <p className="text-[14px] text-gray-700 leading-relaxed">
-          I make things. Web, apps, whatever needs building.
+          I make things. Web, apps, backends, whatever needs building.
         </p>
         <p className="text-[14px] text-gray-700 leading-relaxed">
           I work remotely, jump into projects I like, and build stuff along the way.
@@ -46,7 +47,7 @@ export default function Home() {
       <div className="mt-6 h-px bg-gray-100" />
 
       <div className="mt-6">
-        <h2 className="text-base font-[500] text-[#1A1A1A] mb-4">
+        <h2 className="text-base text-md font-[500] text-[#1A1A1A] mb-4">
           Cool places I’ve worked at
         </h2>
 
@@ -81,6 +82,39 @@ export default function Home() {
           ))}
         </div>
       </div>
+
+      <div className="mt-6">
+        <h2 className="text-base text-md font-[500] text-[#1A1A1A] mb-4">
+          Education
+        </h2>
+
+        <div className="space-y-3">
+          {educations.map((edu, index) => (
+            <div
+              key={index}
+              className="flex items-center justify-between border border-gray-200 rounded-lg p-3 hover:bg-gray-50 transition"
+            >
+              <div className="flex items-center gap-3">
+                <Image
+                  src={edu.image}
+                  alt={edu.name}
+                  width={24}
+                  height={24}
+                  className="rounded-sm"
+                />
+                <div>
+                  <p className="text-sm font-medium text-[#1A1A1A]">{edu.name}</p>
+                  <p className="text-xs text-gray-500">
+                    {edu.degree} | {edu.duration} | {edu.grade}
+                  </p>
+                  <p className="text-xs mt-1 text-gray-500">{edu.brief}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <br />
     </div>
   );
 }
