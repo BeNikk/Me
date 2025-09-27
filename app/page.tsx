@@ -1,3 +1,4 @@
+import highlights from "@/ad-hoc";
 import educations from "@/education";
 import experiences from "@/experiences";
 import projects from "@/projects";
@@ -144,7 +145,40 @@ export default function Home() {
           ))}
         </div>
       </div>
+      <div className="mt-6">
+        <h2 className="text-base font-[500] text-[#1A1A1A] mb-4">Ad-hoc</h2>
 
+        <div className="space-y-3">
+          {highlights.map((item, index) => (
+            <div
+              key={index}
+              className="flex items-center justify-between border border-gray-200 rounded-lg p-3 hover:bg-gray-50 transition"
+            >
+              <div className="flex items-center gap-3">
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  width={64}
+                  height={64}
+                  className="rounded-sm"
+                />
+                <div>
+                  <p className="text-sm font-medium text-[#1A1A1A]">{item.title}</p>
+                  <p className="text-xs text-gray-500">{item.description}</p>
+                </div>
+              </div>
+              {item.link && (
+                <Link
+                  href={item.link}
+                  className="text-xs mx-1 text-gray-600 hover:text-black"
+                >
+                  Link
+                </Link>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
