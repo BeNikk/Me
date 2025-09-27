@@ -122,7 +122,7 @@ export default function Home() {
         </div>
       </div>
       <div className="mt-6">
-        <h2 className="text-base font-[500] text-[#1A1A1A] mb-4">Stuff I've built</h2>
+        <h2 className="text-base font-[500] text-[#1A1A1A] mb-4">Stuff I built</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {projects.map((proj, index) => (
