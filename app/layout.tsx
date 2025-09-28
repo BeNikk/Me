@@ -5,6 +5,7 @@ const inter = Inter({
   subsets: ["latin"],
   display: "swap",
 });
+
 export const metadata: Metadata = {
   title: "Nikhil",
   description: "About Me",
@@ -21,9 +22,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="icon" type="image/jpg" sizes="32x32" href="/ProfileImage.jpg" />
-      </head>
       <body className={inter.className}>
         {children}
       </body>
