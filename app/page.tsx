@@ -60,7 +60,7 @@ export default function Home() {
 
         <div className="mt-6">
           <h2 className="text-base text-md font-[500] text-[#1A1A1A] mb-4">
-            Cool places I’ve worked at
+            Cool places I’ve contributed
           </h2>
 
           <div className="space-y-3">
