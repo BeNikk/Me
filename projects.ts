@@ -9,7 +9,7 @@ const projects = [
   {
     name: "MusicBlocks Git Backend",
     description: "Backend for versioning music projects, similar to Git.",
-    tech: "Node.js, Express, TypeScript, PostgreSQL",
+    tech: "Node.js, Express, TypeScript, Octokit.js",
     image: "/musicBlocks.png",
     link: "https://github.com/sugarlabs/musicblocks-git-backend"
   },
@@ -30,7 +30,7 @@ const projects = [
   {
     name: "E-Commerce Virtual Try-On",
     description: "E-commerce platform with virtual try-ons for products.",
-    tech: "Next.js, Three.js, Tailwind CSS, Cloudinary",
+    tech: "Next.js, Fal.AI, Tailwind CSS, Cloudinary",
     image: "/ecom.jpeg",
     link: "https://github.com/BeNikk/E-com"
   },
