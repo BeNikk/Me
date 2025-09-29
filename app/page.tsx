@@ -217,7 +217,7 @@ export default function Home() {
         <div className="mt-6 text-center text-gray-700 text-sm">
           Want to talk?{" "}
           <Link
-            href="mailto:your.email@example.com"
+            href="mailto:bhattnik442@gmail.com"
             className="text-blue-500 hover:underline"
           >
             Mail me
