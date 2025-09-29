@@ -189,6 +189,40 @@ export default function Home() {
             ))}
           </div>
         </div>
+        <div className="mt-6">
+          <h2 className="text-base font-[500] text-[#1A1A1A] mb-4">Skills</h2>
+          <div className="flex flex-wrap gap-2">
+            {[
+              "JavaScript",
+              "TypeScript",
+              "React",
+              "Next.js",
+              "Node.js",
+              "Tailwind CSS",
+              "Prisma",
+              "MongoDB",
+              "PostgreSQL",
+              "Docker"
+            ].map((skill, index) => (
+              <span
+                key={index}
+                className="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-6 text-center text-gray-700 text-sm">
+          Want to talk?{" "}
+          <Link
+            href="mailto:your.email@example.com"
+            className="text-blue-500 hover:underline"
+          >
+            Mail me
+          </Link>
+        </div>
         <div className="mt-12 border-t border-gray-200 pt-6 text-center text-gray-500 text-xs">
           © {new Date().getFullYear()} Nikhil Bhatt
         </div>
