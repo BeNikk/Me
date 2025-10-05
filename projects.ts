@@ -4,7 +4,7 @@ const projects = [
     description: "Discuss, solve, and code together with your friends in real-time.",
     tech: "Web Sockets (ws), CRDT (Y.js), Livekit, Gemini, Express + TypeScript, Next.js + Tailwind CSS",
     image: "/pairProgram.png",
-    link: "pair-program-nine.vercel.app"
+    link: "https://github.com/BeNikk/pair-program"
   },
   {
     name: "MusicBlocks Git Backend",
