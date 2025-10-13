@@ -6,19 +6,19 @@ const projects = [
     image: "/pairProgram.png",
     link: "https://github.com/BeNikk/pair-program"
   },
+    {
+    name: "Centralised Exchange (Backend)",
+    description: "A centralised exchange using typescript, redis queues etc.",
+    tech: "Redis, Node.js, TypeScript, Express, Singleton Pattern, Postgres",
+    image: "/cfdExchange.jpeg",
+    link: "https://github.com/BeNikk/cex"
+  },
   {
     name: "MusicBlocks Git Backend",
     description: "Backend for versioning music projects, similar to Git.",
     tech: "Node.js, Express, TypeScript, Octokit.js",
     image: "/musicBlocks.png",
     link: "https://github.com/sugarlabs/musicblocks-git-backend"
-  },
-  {
-    name: "CFD Exchange (Backend)",
-    description: "A trading platform using Redis and a processor for executing trades.",
-    tech: "Redis, Node.js, TypeScript, Express",
-    image: "/cfdExchange.jpeg",
-    link: "https://github.com/BeNikk/exchange"
   },
   {
     name: "newDemy",
