@@ -8,8 +8,8 @@ const projects = [
   },
     {
     name: "Centralised Exchange (Backend)",
-    description: "A centralised exchange using typescript, redis queues etc.",
-    tech: "Redis, Node.js, TypeScript, Express, Singleton Pattern, Postgres",
+    description: "A centralised exchange using typescript, redis queues, pub subs and postgres",
+    tech: "Redis, Node.js, TypeScript, Express, Singleton Pattern, Postgres, Pub subs",
     image: "/cfdExchange.jpeg",
     link: "https://github.com/BeNikk/cex"
   },
