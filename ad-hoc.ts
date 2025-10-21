@@ -28,6 +28,12 @@ const highlights = [
     description: "Participated in Hashnode AI for tomorrow hackathon, made my first internet dollar",
     image: "/hashnode.png",
     link: "https://github.com/BeNikk/cheatcode"
+  },
+  {
+    title:"I write",
+    description:"Sometimes I write",
+    image:'/blogs.webp',
+    link:"https://blogs.nikkhil.tech"
   }
 ];
 export default highlights;

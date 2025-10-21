@@ -48,7 +48,7 @@ const projects = [
     image: "/playpdf.jpeg",
     link: "https://github.com/BeNikk/pdf"
   }
-
+  
 ];
 
 export default projects;
