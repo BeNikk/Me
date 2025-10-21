@@ -14,6 +14,13 @@ const projects = [
     link: "https://github.com/BeNikk/cex"
   },
   {
+    name:"Maker - AI website builder",
+    description:"Make websites using a simple prompt, using AI",
+    tech:"Nextjs, trpc, Gemini, inngest, e2b",
+    image:"/maker.png",
+    link:"https://github.com/BeNikk/maker"
+  },
+  {
     name: "MusicBlocks Git Backend",
     description: "Backend for versioning music projects, similar to Git.",
     tech: "Node.js, Express, TypeScript, Octokit.js",
