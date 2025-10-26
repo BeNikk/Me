@@ -6,7 +6,7 @@ const highlights = [
     link: "https://x.com/paraschopra/status/1911680686202708239"
   },
   {
-    title: "Contributions that got me to GSoC",
+    title: "Contributions that got me into GSoC",
     description: "See my major work in pre-GSoC period that got me in, majorly bug fixes, test cases and few enhancements.",
     image: "/sugarlabs.png",
     link: "https://github.com/sugarlabs/musicblocks/commits?author=BeNikk"
@@ -30,10 +30,10 @@ const highlights = [
     link: "https://github.com/BeNikk/cheatcode"
   },
   {
-    title:"I write",
-    description:"Sometimes I write",
-    image:'/blogs.webp',
-    link:"https://blogs.nikkhil.tech"
+    title: "I write",
+    description: "Sometimes I write",
+    image: '/blogs.webp',
+    link: "https://blogs.nikkhil.tech"
   }
 ];
 export default highlights;
