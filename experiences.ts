@@ -28,7 +28,7 @@ const experiences = [
     title: "Misty",
     subtitle: "Full stack Developer",
     description:
-      "Worked there for a month, contributed to 2 projects right after joining.",
+      "Worked here for a month, contributed to 2 projects right after joining.",
     link: ""
   },
 ];

@@ -36,4 +36,5 @@ const highlights = [
     link: "https://blogs.nikkhil.tech"
   }
 ];
+
 export default highlights;
