@@ -10,8 +10,8 @@ export const metadata: Metadata = {
   title: "Nikhil",
   description: "About Me",
   icons: {
-    icon: '/ProfileImage.jpg',
-    apple: '/ProfileImage.jpg', // For Apple devices
+    icon: '/favicon.ico', // For browsers
+    apple: '/favicon.ico', // For Apple devices
   },
 };
 
